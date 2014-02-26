@@ -1248,7 +1248,7 @@ the specific language governing permissions and limitations under the Apache Lic
 
             css =  {
                 left: dropLeft,
-                width: width
+                width: width - 1
             };
 
             if (above) {
@@ -3070,7 +3070,7 @@ the specific language governing permissions and limitations under the Apache Lic
             maxWidth = this.selection.width();
             containerLeft = this.selection.offset().left;
 
-            searchWidth = maxWidth - (left - containerLeft) - sideBorderPadding;
+            searchWidth = maxWidth - (left - containerLeft) - sideBorderPadding - 1;
 
             if (searchWidth < minimumWidth) {
                 searchWidth = maxWidth - sideBorderPadding;
